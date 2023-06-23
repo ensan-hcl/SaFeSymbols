@@ -18,6 +18,7 @@ public extension Label<Text, Image> {
     }
 }
 
+#if os(macOS)
 @available(macOS 13.0, *)
 public extension MenuBarExtra where Label == SwiftUI.Label<Text, Image>, Content: View {
     init(_ titleKey: LocalizedStringKey, symbol: SaFeSymbols, @ViewBuilder content: () -> Content) {
@@ -26,4 +27,5 @@ public extension MenuBarExtra where Label == SwiftUI.Label<Text, Image>, Content
         }
     }
 }
+#endif
 #endif
