@@ -12,6 +12,7 @@ SaFeSymbols provides static availablitiy check. If a symbol is potentially unava
 
 ```swift
 var body: some View {
+    // 'wifi_circle' is only available in iOS 15.0 or newer
     Image(symbol: .wifi_circle)
 }
 ```
